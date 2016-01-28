@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=430">
+	<link href='http://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
+	<link type="text/css" rel="stylesheet" href="css/reset.css">
+	<link type="text/css" rel="stylesheet" href="css/board.css">
+	<link rel="apple-touch-icon" sizes="72x72" href="/images/sudo10-144.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="/images/sodo10-114.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="/images/sudo10-144.png" />
+	<link rel="apple-touch-icon" sizes="57x57" href="/images/sudo10-114.png" />
+	<link href="https://plus.google.com/102227908662565494302" rel="publisher" />
+<!--[if lt IE 9]>
+  <script src="src/excanvas.compiled.js"></script>
+<![endif]-->
+</head>
+<body onload="drawBoard()" itemscope itemtype="http://schema.org/CreativeWork">
+<div class="header"><h1 itemprop="name">Sudo10</h1></div>
+<style>
+.sudo10-responsive { width: 320px; height: 50px; }
+@media(min-width: 500px) { .sudo10-responsive { width: 468px; height: 60px; } }
+@media(min-width: 800px) { .sudo10-responsive { width: 728px; height: 90px; } }
+</style>
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Sudo10_responsive -->
+<ins class="adsbygoogle sudo10-responsive"
+     style="display:inline-block"
+     data-ad-client="ca-pub-9768923736486297"
+     data-ad-slot="6268612049"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<div class="container">
+<div class="boardContainer cell">
+	<div class="controls cell">
+	<ol class="difficulty" style="display:none;">
+		<li class="enabled">Easy</li>
+		<li>Hard</li>
+	</ol>
+	</div>
+	<div class="canvasContainer">
+    <img class="boardCanvas" src="images/board.png">
+	<table id="board">
+		<tr>
+			<td><div data-block="0" class="sw"></div><div data-block="1" class="ne"></div></td>
+			<td><div data-block="1" class="square"></div></td>
+			<td><div data-block="1" class="square"></div></td>
+			<td><div data-block="1" class="square"></div></td>
+			<td><div data-block="2" class="square"></div></td>
+			<td><div data-block="2" class="square"></div></td>
+			<td><div data-block="2" class="square"></div></td>
+			<td><div data-block="2" class="nw"></div><div data-block="3" class="se"></div></td>
+		</tr>
+		<tr>
+			<td><div data-block="0" class="square"></div></td>
+			<td><div data-block="0" class="sw"></div><div data-block="1" class="ne"></div></td>
+			<td><div data-block="1" class="square"></div></td>
+			<td><div data-block="1" class="square"></div></td>
+			<td><div data-block="2" class="square"></div></td>
+			<td><div data-block="2" class="square"></div></td>
+			<td><div data-block="2" class="nw"></div><div data-block="3" class="se"></div></td>
+			<td><div data-block="3" class="square"></div></td>
+		</tr>
+		<tr>
+			<td><div data-block="0" class="square"></div></td>
+			<td><div data-block="0" class="square"></div></td>
+			<td><div data-block="0" class="sw"></div><div data-block="1" class="ne"></div></td>
+			<td><div data-block="1" class="square"></div></td>
+			<td><div data-block="2" class="square"></div></td>
+			<td><div data-block="2" class="nw"></div><div data-block="3" class="se"></div></td>
+			<td><div data-block="3" class="square"></div></td>
+			<td><div data-block="3" class="square"></div></td>
+		</tr>
+		<tr>
+			<td><div data-block="0" class="square"></div></td>
+			<td><div data-block="0" class="square"></div></td>
+			<td><div data-block="0" class="square"></div></td>
+			<td><div data-block="0" class="sw"></div><div data-block="1" class="ne"></div></td>
+			<td><div data-block="2" class="nw"></div><div data-block="3" class="se"></div></td>
+			<td><div data-block="3" class="square"></div></td>
+			<td><div data-block="3" class="square"></div></td>
+			<td><div data-block="3" class="square"></div></td>
+		</tr>
+		<tr>
+			<td><div data-block="7" class="square"></div></td>
+			<td><div data-block="7" class="square"></div></td>
+			<td><div data-block="7" class="square"></div></td>
+			<td><div data-block="7" class="nw"></div><div data-block="6" class="se"></div></td>
+			<td><div data-block="5" class="sw"></div><div data-block="4" class="ne"></div></td>
+			<td><div data-block="4" class="square"></div></td>
+			<td><div data-block="4" class="square"></div></td>
+			<td><div data-block="4" class="square"></div></td>
+		</tr>
+		<tr>
+			<td><div data-block="7" class="square"></div></td>
+			<td><div data-block="7" class="square"></div></td>
+			<td><div data-block="7" class="nw"></div><div data-block="6" class="se"></div></td>
+			<td><div data-block="6" class="square"></div></td>
+			<td><div data-block="5" class="square"></div></td>
+			<td><div data-block="5" class="sw"></div><div data-block="4" class="ne"></div></td>
+			<td><div data-block="4" class="square"></div></td>
+			<td><div data-block="4" class="square"></div></td>
+		</tr>
+		<tr>
+			<td><div data-block="7" class="square"></div></td>
+			<td><div data-block="7" class="nw"></div><div data-block="6" class="se"></div></td>
+			<td><div data-block="6" class="square"></div></td>
+			<td><div data-block="6" class="square"></div></td>
+			<td><div data-block="5" class="square"></div></td>
+			<td><div data-block="5" class="square"></div></td>
+			<td><div data-block="5" class="sw"></div><div data-block="4" class="ne"></div></td>
+			<td><div data-block="4" class="square"></div></td>
+		</tr>
+		<tr>
+			<td><div data-block="7" class="nw"></div><div data-block="6" class="se"></div></td>
+			<td><div data-block="6" class="square"></div></td>
+			<td><div data-block="6" class="square"></div></td>
+			<td><div data-block="6" class="square"></div></td>
+			<td><div data-block="5" class="square"></div></td>
+			<td><div data-block="5" class="square"></div></td>
+			<td><div data-block="5" class="square"></div></td>
+			<td><div data-block="5" class="sw"></div><div data-block="4" class="ne"></div></td>
+		</tr>
+	</table>
+<ol class="available">
+	<li>0</li>
+	<li>1</li>
+	<li>2</li>
+	<li>3</li>
+	<li>4</li>
+	<li class="clear">5</li>
+	<li>6</li>
+	<li>7</li>
+	<li>8</li>
+	<li>9</li>
+</ol>
+</div>
+</div>
+
+
+<div class="rules">
+
+<div class="g-plusone" data-size="medium" data-annotation="inline" data-width="300"></div>
+<script type="text/javascript">
+  window.___gcfg = {lang: 'en-GB'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+<h2>Rules</h2>
+<p>
+This board has 8 rows, 8 columns and 8 triangles.
+Each of these areas contains 10 cells (squares and triangles).
+</p><p>
+Your goal is to place the digits 0-9 in the cells so that no digit occurs
+twice in any row, column or triangle.</p>
+</div>
+
+<div class="footer" itemprop="accountablePerson" itemprop="copyrightHolder">
+&copy; <span itemscope itemtype="http://schema.org/Person" itemprop="name">James Smith</span> 2012
+</div>
+<div class="footer">
+<a href="//plus.google.com/102227908662565494302?prsrc=3"
+   rel="publisher" target="_top" style="text-decoration:none;display:inline-block;color:#333;text-align:center; font:13px/16px arial,sans-serif;white-space:nowrap;">
+<img src="//ssl.gstatic.com/images/icons/gplus-64.png" alt="" style="border:0;width:64px;height:64px;"/><br />
+<span style="font-weight:bold;">Follow me</span><br /><span>on Google+</span>
+</a>
+</div>
+</div>
+<script type="text/javascript" src="src/cmprssd.js">//</script>
+<script type="text/javascript">
+	var startGame = function(difficulty) {
+		var board = SUDOKU.board.createBoard("board", 10);
+		SUDOKU.game.fillBoard(board, new Date());
+		unFill(board, new Date());
+		if (difficulty === "Easy") {
+			unFillSomeMore(board, 2);
+			unFillSomeMore(board, 3);
+		} else if (difficulty === "Hard") {
+			unFillSomeMore(board, 2);
+			unFillSomeMore(board, 3);
+			unFillSomeMore(board, 4);
+		} 
+
+		for (var index = 0; index < board.cells.length; index++) {
+			var boardCell = board.cells[index];
+			boardCell.element.textContent = boardCell.value;
+		}
+	}
+  function drawBoard() {
+	startGame("Hard");
+  }
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36071385-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+/**
+ * Copyright 2012 James Smith. All rights reserved.
+ */
+/** Small board overrides **/
+.small.boardContainer {
+	height: 265px;
+	width: 413px;
+}
+.small #board, .small #boardCanvas {
+	width: 200px;
+}
+.small ol.available {
+	top: 200px;
+}
+/** End small board overrides **/
+.boardContainer {
+	position: relative;
+	margin: 0 15px;
+	height: 530px;
+}
+.container {
+	margin: 0 auto;
+	width: 428px;
+}
+#board, #boardCanvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 400px;
+}
+.boardCanvas {
+	z-index: -1;
+	border: 1px solid black;
+	margin: -1px;
+	background-color: #fffff0;
+}
+body {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+#board td {
+	height: 48px;
+	width: 48px;
+	position: relative;
+	border: 1px solid transparent;
+	float: left;
+}
+td>div {
+	min-heigth: 100%;
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	position: relative;
+	cursor: pointer;
+}
+div.sw, div.ne, div.se, div.nw {
+	border: none;
+	width: 26px;
+	height: 26px;
+	position: absolute;
+	font-size: 1.3em;
+	text-align: center;
+}
+div.sw {
+	bottom: 0;
+	left: 0;
+}
+div.se {
+	bottom: 0;
+	right: 0;
+}
+div.nw {
+	top: 0;
+	left: 0;
+	padding-top: 1px;
+}
+div.ne {
+	top: 0;
+	right: 0;
+	padding-top: 1px;
+}
+#board {
+	position: absolute;
+ 	z-index: 10;
+}
+div.square {
+	text-align: center;
+	padding-top: 12px;
+	height: 36px;
+	font-size: 1.3em;
+}
+ol.available li {
+	background-color: #DDDAC9;
+	float: left;
+	margin-right: 33px;
+	margin-top: 16px;
+	width: 42px;
+	height: 26px;
+	padding: 4px;
+	padding-top: 10px;
+	border: 1px solid black;
+	text-align: center;
+	border-radius: 5px;
+}
+ol.available li, #board {	
+	box-shadow: 3px 5px 5px black;
+	-webkit-transition: margin-top 100ms ease-in; 
+}
+ol.available {
+	list-style: none;
+	margin-left: 3px;
+	position: absolute;
+	top: 400px;
+	left: 0;
+	width: 100%;
+	height: 135px;
+}
+.clear {
+	clear: left;
+}
+.small ol.available {
+	min-width: 216px;
+}
+ol.available {
+	min-width: 425px;
+}
+ol.available li.disabled {
+	color: grey;
+	box-shadow: none;
+	margin-top: 19px;
+}
+ol.available li.enabled {
+	cursor: pointer;
+	background-color: #50CF5A;
+}
+ol.available li.selected {
+	margin-top: 14px;
+}
+ol.narrow li {
+	margin-right: 20px;
+}
+ol.difficulty {
+	list-style: none;
+	width: 263px;
+	margin: 0 auto;
+}
+ol.difficulty li {
+	display: inline-block;
+	width: 5em;
+	background-color: #9BC;
+	margin: 12px 7px;
+	padding: 6px;
+	border: 1px solid black;
+	border-radius: 5px;
+	cursor: pointer;
+	text-align: center;
+	color: grey;
+}
+ol.difficulty li.enabled {
+	color: black;
+	cursor: default;
+	background-color: white;
+}
+.header {
+	margin-top: 10px;
+	font-family: Audiowide;
+	font-size: 62px;
+	text-align: center;
+}
+.footer {
+	font-size: 11px;
+	margin: 0.5em;
+	float: right;
+    clear: both;
+}
+.canvasContainer {
+	position: relative;
+}
+.rules {
+	margin: 1em;
+}
+.rules p {
+	font-size: 16px;
+}
+.rules h2 {
+	margin-top: 10px;
+	padding-bottom: 4px;
+}
+.ad {
+	text-align: center;
+	padding: 10px 0;
+}

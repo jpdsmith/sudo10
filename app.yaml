@@ -1,0 +1,27 @@
+application: sudo10ku
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /css
+  static_dir: site/css
+
+- url: /src
+  static_dir: site/src
+
+- url: /images
+  static_dir: site/images
+
+- url: /favicon.ico
+  static_files: site/favicon.ico
+  upload: site/(.*\.ico)
+
+- url: /robots.txt
+  static_files: site/robots.txt
+  upload: site/(.*\.txt)
+
+- url: /
+  static_files: site/sudoku_big.html
+  upload: site/(.*\.html)
