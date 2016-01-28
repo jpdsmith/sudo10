@@ -7,6 +7,9 @@ var unFill = function(board, seed) {
 		var bc = board.cells.slice(0);
 		for (var index = 0; index < bc.length; index++) {
 			var cell = bc[index];
+			if (cell.isTriangle()) {
+				continue;
+			}
 			if (cell.availableValues.length === 1 && cell.value !== null) {
 				cell.unsetValue();
 				return true;

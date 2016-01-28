@@ -104,6 +104,10 @@ Cell.prototype.blockContains = function(val) {
 };
 
 
+Cell.prototype.isTriangle = function() {
+	return (this.row == this.column) || (this.row == 7 - this.column);
+};
+
 Cell.prototype.unsetValue = function() {
 	var value = this.value;
 	this.value = null;
