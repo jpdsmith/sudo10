@@ -49,7 +49,7 @@ var unFillSomeMore = function(board, level) {
 	var bc = board.cells.slice(0);
 	for (i = 0; i < bc.length; i++) {
 		cell = bc[i];
-		if (cell.isTriangle()) {
+		if (!cell.isTriangle()) {
 			continue;
 		}
 		if (cell.availableValues.length === level && cell.value !== null) {
